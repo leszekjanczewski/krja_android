@@ -1,4 +1,4 @@
-# Kłodawski Rokzład Jazy Autobusów
+# Kłodawski Rokzład Jazdy Autobusów
 
 Aplikacja - Kłodawski Rozkład Jazdy Autobusów (wersja natywna na Androida)
 
