@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F4CAE0"
     tools:context=".MainActivity">
+
+
+    <RadioGroup android:id="@+id/radio_group_direction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/text_direction"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioButton android:id="@+id/radio_gorzow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/direction_gorzow"
+            android:onClick="onRadioButtonDirectionClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio_klodawa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonDirectionClicked"
+            android:text="@string/direction_klodawa" />
+
+    </RadioGroup>
+
+</LinearLayout>

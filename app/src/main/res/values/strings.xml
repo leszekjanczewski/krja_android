@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">krja</string>
+    <string name="app_name">Kłodawski Rozkład Jazdy Autobusów</string>
+    <string name="text_direction">Wybierz w którą jedziesz stronę</string>
+    <string name="direction_gorzow">Do Gorzów Wlkp.</string>
+    <string name="direction_klodawa">Do Kłodawa</string>
 </resources>
