@@ -1,6 +1,50 @@
 <resources>
     <string name="app_name">Kłodawski Rozkład Jazdy Autobusów</string>
     <string name="text_direction">Wybierz w którą jedziesz stronę</string>
-    <string name="direction_gorzow">Do Gorzów Wlkp.</string>
-    <string name="direction_klodawa">Do Kłodawa</string>
+    <string name="direction_gorzow">Do Gorzowa Wlkp.</string>
+    <string name="direction_klodawa">Do Kłodawy</string>
+    <string-array name="station">
+        <item>Gorzów, dworzec</item>
+        <item>Gorzów, AWF</item>
+        <item>Gorzów, Mieszko</item>
+        <item>Gorzów, Kosynierów G.</item>
+        <item>Gorzów, Roosevelta</item>
+        <item>Gorzów, Wyszyńskiego (Policja)</item>
+        <item>Gorzów, Wyszyńskiego (Owocowa)</item>
+        <item>Gorzów, Wyszyńskiego (Dekerta)</item>
+        <item>Kłodawa, Oś. Marzeń</item>
+        <item>Kłodawa, Oś. Marzeń (na żądanie)</item>
+        <item>Kłodawa, Szkoła</item>
+        <item>Kłodawa, Centrum (UG)</item>
+        <item>Kłodawa, Mironicka I</item>
+        <item>Kłodawa, Mironicka II</item>
+        <item>Mironice</item>
+        <item>Santocko, Remiza</item>
+        <item>Santocko II</item>
+        <item>Santocko III</item>
+        <item>Santocko, Pętla</item>
+    </string-array>
+    <string-array name="start_to_klodawa">
+        <item>04:10</item>
+        <item>05:25</item>
+        <item>06:30</item>
+        <item>08:45</item>
+        <item>13:55</item>
+        <item>15:10</item>
+        <item>16:25</item>
+        <item>17:40</item>
+        <item>19:05</item>
+        <item>20:20</item>
+        <item>22:35</item>
+        <item>04:10</item>
+        <item>06:45</item>
+        <item>09:35</item>
+        <item>15:00</item>
+        <item>20:10</item>
+        <item>22:25</item>
+        <item>06:45</item>
+        <item>09:35</item>
+        <item>12:05</item>
+        <item>20:10</item>
+    </string-array>
 </resources>

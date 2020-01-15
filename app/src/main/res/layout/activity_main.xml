@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
@@ -8,21 +9,23 @@
     tools:context=".MainActivity">
 
 
-    <RadioGroup android:id="@+id/radio_group_direction"
+    <RadioGroup
+        android:id="@+id/radio_group_direction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_direction"/>
-
-        <RadioButton android:id="@+id/radio_gorzow"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/direction_gorzow"
-            android:onClick="onRadioButtonDirectionClicked"/>
+            android:text="@string/text_direction" />
+
+        <RadioButton
+            android:id="@+id/radio_gorzow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonDirectionClicked"
+            android:text="@string/direction_gorzow" />
 
         <RadioButton
             android:id="@+id/radio_klodawa"
@@ -32,5 +35,14 @@
             android:text="@string/direction_klodawa" />
 
     </RadioGroup>
+
+    <Spinner
+        android:id="@+id/list_station"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/station"/>
 
 </LinearLayout>
