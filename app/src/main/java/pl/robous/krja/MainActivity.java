@@ -4,27 +4,38 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-
-    ArrayList line2a = new ArrayList<List>();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        line2a.add(0, "Santocko");
-        line2a.add(1,"7:00");
-        line2a.add(2,"Mironice");
-        line2a.add(3,"7:15");
-    }
+        Spinner spinnerStation = (Spinner) findViewById(R.id.list_station);
+        TextView stationTime = (TextView) findViewById(R.id.show_station);
+        List<String> times = Arrays.asList(getResources().getStringArray(R.array.start_to_klodawa));
 
+        spinnerStation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                stationTime.setText(spinnerStation.getSelectedItem().toString());
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
 
     public void onRadioButtonDirectionClicked(View view) {
 
@@ -34,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         switch (idFromRadioGroupDirection) {
             case R.id.radio_gorzow:
                 System.out.println("Gorzow");
-                System.out.println(line2a.toString());
                 break;
             case R.id.radio_klodawa:
                 System.out.println("Klodawa");
