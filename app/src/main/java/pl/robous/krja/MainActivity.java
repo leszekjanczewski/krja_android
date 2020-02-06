@@ -27,7 +27,15 @@ public class MainActivity extends AppCompatActivity {
         spinnerStation.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                stationTime.setText(spinnerStation.getSelectedItem().toString());
+
+                    String text = "";
+
+                for (String time: times) {
+                    text = text + time + "; ";
+                }
+
+                stationTime.setText(text);
+
             }
 
             @Override
