@@ -29,12 +29,32 @@ public class MainActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
                     String text = "";
-
-                for (String time: times) {
-                    text = text + time + "; ";
+                switch (position) {
+                    case 0:
+                        for (String time: times) {
+                            text = text + time + "; ";
+                        }
+                        break;
+                    case 1:
+                        for (String time: times) {
+                            String test [] = time.split(":");
+                            int hh = Integer.parseInt(test[0]);
+                            int mm = Integer.parseInt(test[1]);
+                            if ((mm + 2) > 59) {
+                                hh += 1;
+                            }
+                            System.out.println(hh + " " + test[0]);
+                            text = text + time + "; ";
+                        }
+                        break;
+                        default:
+                            break;
                 }
 
-                stationTime.setText(text);
+
+
+
+                stationTime.setText(times.get(position));
 
             }
 
